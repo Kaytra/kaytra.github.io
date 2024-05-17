@@ -26,6 +26,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .row {
     float: left;
     padding: 0px 5px;
+    text-decoration: none;
 }
 
 .black {
@@ -35,6 +36,13 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .interests-img {
     height: 150px;
+}
+.reading-img {
+    height: 200px;
+}
+.manga-link {
+    width: 200px;
+    min-height: 365px;
 }
 
 .sidebar-icon {
