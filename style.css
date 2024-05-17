@@ -43,7 +43,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .manga-link {
     width: 200px;
     min-height: 365px;
-}
+} 
 
 .sidebar-icon {
     filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);;
