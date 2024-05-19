@@ -40,10 +40,17 @@ body, h1, h2, h3, h4, h5, h6 {
 .reading-img {
     height: 200px;
 }
-.manga-link {
+.reading-link {
     width: 200px;
     min-height: 365px;
 } 
+.mod-img {
+    max-height: 50px;
+}
+.mod-link {
+    width: 200px;
+    min-height: 150px;
+}
 
 .sidebar-icon {
     filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);;
@@ -54,11 +61,16 @@ body, h1, h2, h3, h4, h5, h6 {
     filter:invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);
 }
 
+.underline-overline { text-decoration: underline overline; }
+
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0;
     }
     .manga-link {
         width: 50%;
+    }
+    .mod-link {
+        width: 25%;
     }
 }
