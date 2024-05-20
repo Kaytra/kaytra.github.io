@@ -49,7 +49,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .mod-link {
     width: 200px;
-    min-height: 150px;
+    min-height: 175px;
 }
 
 .sidebar-icon {
@@ -67,7 +67,7 @@ body, h1, h2, h3, h4, h5, h6 {
     #main {
         margin-left: 0;
     }
-    .manga-link {
+    .reading-link {
         width: 50%;
     }
     .mod-link {
