@@ -37,19 +37,27 @@ body, h1, h2, h3, h4, h5, h6 {
 .interests-img {
     height: 150px;
 }
-.reading-img {
-    height: 200px;
-}
 .reading-link {
     width: 200px;
-    min-height: 365px;
+    min-height: 455px;
 } 
-.mod-img {
-    max-height: 50px;
+.reading-link>img {
+    height: 200px;
+}
+.reading-link>hr {
+    margin: 5px 0;
 }
 .mod-link {
     width: 200px;
-    min-height: 175px;
+    height: 175px;
+    text-decoration: none;
+}
+.mod-link>img {
+    float: left;
+    max-height: 50px;
+}
+.mod-link>p {
+    min-height: 50px;
 }
 
 .sidebar-icon {
