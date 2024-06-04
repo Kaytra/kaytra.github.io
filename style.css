@@ -99,6 +99,7 @@ body, h1, h2, h3, h4, h5, h6 {
         max-height: 50px;
     }
     .mod-link>p {
+        margin-top:-25px;
         min-height: 50px;
     }
 
