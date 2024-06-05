@@ -1,13 +1,33 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #61576b;
+    --primary-text-color: #fff;
+    --secondary-text-color: #000;
+    --hover-color: #ccc;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar {
     width: 120px;
-    background: #61576b;
+    background: var(--secondary-color);
 }
 #main {
     margin-left: 200px;
+}
+
+.list-button {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.list-button:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--hover-color);
 }
 
 .sidebar {
@@ -24,14 +44,16 @@ body, h1, h2, h3, h4, h5, h6 {
     float: left;
 }
 .row {
-    float: left;
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: top;
     padding: 0px 5px;
     text-decoration: none;
 }
 
 .black {
-    color:#fff;
-    background-color:#000
+    color: var(--primary-text-color);
+    background-color: var(--primary-color)
 }
 
 .interests-img {
@@ -39,21 +61,20 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .reading-link {
     width: 200px;
-    min-height: 455px;
+    min-height: 300px;
 } 
 .reading-link>img {
     height: 200px;
 }
 .reading-link>hr {
     margin: 5px 0;
-    width: 200px;
 }
 .reading-link>p {
     max-width: 200px;
 }
 .mod-link {
     width: 200px;
-    height: 175px;
+    /*height: 175px;*/
     text-decoration: none;
 }
 .mod-link>img {
@@ -82,7 +103,7 @@ body, h1, h2, h3, h4, h5, h6 {
         float: none;
     }
     .reading-link {
-        width: 50%;
+        width: 49%;
     }
 
     .padding-top-nb {
@@ -90,8 +111,9 @@ body, h1, h2, h3, h4, h5, h6 {
     }
     
     .mod-link {
-        width: 200px;
-        height: 175px;
+        width: 90%;
+        min-height: 75px;
+        height: auto;
         text-decoration: none;
     }
     .mod-link>img {
@@ -99,8 +121,9 @@ body, h1, h2, h3, h4, h5, h6 {
         max-height: 50px;
     }
     .mod-link>p {
-        margin-top:-25px;
+        margin-top: 0px;
         min-height: 50px;
+        padding-left: 90px;
     }
 
 }
