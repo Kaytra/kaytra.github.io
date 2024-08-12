@@ -94,6 +94,9 @@ a.mod-link:hover { border: 1px solid #1a1a1a; }
     width: 100px;
     filter:invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);
 }
+.mc-img>img {
+    max-width:100%;
+}
 
 .list-head { text-decoration: underline solid var(--tertiary-text-color) 1px; }
 
