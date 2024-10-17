@@ -16,15 +16,17 @@ body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
 #main { margin-left: 200px; }
 
 .list-button {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     color: var(--primary-text-color);
-    background-color: var(--secondary-color);
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 4px;
 }
+
 .list-button:hover {
     color: var(--secondary-text-color);
     background-color: var(--hover-color);
+    background-image: none;
 }
 a>object {
     position: relative;
