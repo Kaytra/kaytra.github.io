@@ -5,6 +5,8 @@
     --secondary-text-color: #000;
     --tertiary-text-color: #757575;
     --hover-color: #ccc;
+    --purple-grad: linear-gradient(180deg, rgba(19,0,36,1) 0%, rgba(143,31,159,1) 50%, rgba(223,223,223,1) 100%);
+    --neat-grad: linear-gradient(to right, #1F1C2C 0%, #928DAB  51%, #1F1C2C  100%);
 }
 
 body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
@@ -16,7 +18,11 @@ body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
 #main { margin-left: 200px; }
 
 .list-button {
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: var(--neat-grad);
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+    background-size: 200% auto;
+
     color: var(--primary-text-color);
     text-decoration: none;
     padding: 5px 15px;
@@ -24,9 +30,7 @@ body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
 }
 
 .list-button:hover {
-    color: var(--secondary-text-color);
-    background-color: var(--hover-color);
-    background-image: none;
+    background-position: right center;
 }
 a>object {
     position: relative;
@@ -89,8 +93,11 @@ a.mod-link:hover { border: 1px solid #1a1a1a; }
 .info-list:not(.last-list) { border-right: none;}
 
 .sidebar-icon {
-    filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);;
+    filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);
     width: 100px;
+}
+.w3-button:hover .sidebar-icon {
+    filter: sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);
 }
 .social-svg {
     width: 100px;
