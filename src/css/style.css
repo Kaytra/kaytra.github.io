@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #61576b;
+    --primary-text-color: #fff;
+    --secondary-text-color: #000;
+    --tertiary-text-color: #757575;
+    --hover-color: #ccc;
+
+    --header-height: 9vh;
+    --footer-height: 5vh;
+}
+.carousel-indicators {
+    gap: 5px;
+}
+.carousel-indicators button {
+    width: 20px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+.carousel-control-prev .visually-hidden, .carousel-control-next .visually-hidden {
+    display: none;
+}
+
+body, h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+body { height: 100vh; background-color: var(--primary-color); color: var(--primary-text-color);}
+
+.nav {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.nav .pfp { height: var(--header-height) !important; }
+.nav a { color: inherit; text-decoration: none; height: 100%; display: flex; align-items: center; padding: 0.25rem;}
+.nav ul { padding: 0; margin: 0; list-style: none; display: flex; gap: 1rem; }
+.nav li:hover { background-color: var(--hover-color);}
+.nav li.active { background-color: var(--primary-color);}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.k-article {
+    padding-top: var(--header-height);
+    min-height: calc(100vh - var(--footer-height));
+    text-align: center;
+}
+.k-section {
+    padding-top: 10px;
+    color: var(--tertiary-text-color);
+}
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    min-height: var(--footer-height);
+}
+.social { display: flex; flex-direction: column; }
+.social-svg {
+    width: 35px;
+    filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(212deg) brightness(111%) contrast(101%);
+    align-self: center;
+}
+.foot-links {display: flex; flex-direction: column;}
+.foot-links>h2 { align-self: center; }
+.interests-img {
+    height: 150px;
+}
+.interest-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mod-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mod-link {
+    width: 200px;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+}
+.mod-link>object, .mod-link>object>img, .mod-link>img { max-height: 50px; }
+
+
+@media only screen and (max-width: 600px) {
+    .sticky {
+        padding-left: 0;
+    }
+}
